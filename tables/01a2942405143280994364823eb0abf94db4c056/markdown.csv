@@ -1,0 +1,19 @@
+cell_id,source,language,is_reliable
+1,"['# Analysis of Foursquare Data\n', '# NYU - CUSP UDP Capstone\n', '# Foursquare + NYC Merge by CT \n', '## Brief\n', 'This notebook \n', '1. Part I. Data Processing\n', '\n', '    - import Foursquare data\n', '    - imports the Census Tract shapefile\n', '    - import Typologies\n', '    - merges topologies\n', '    - Spatail join by Census Tract\n', '    - merges topologies\n', '    - map topologies\n', '    - map Businesses\n', '1. Part II. Data Processing\n', '    - Performs a classifcation task on Typologies\n', '###  You can refer to https://github.com/mv1742/updny_2']",English,True
+2,['# Part I. Data Processing\n'],Catalan,False
+4,"['# NYU - CUSP UDP Capstone\n', '# Foursquare + NYC Merge by CT \n', '## Brief\n', 'This notebook \n', '- import Foursquare data\n', '- imports the Census Tract shapefile\n', '- import Typologies\n', '- merges topologies\n', '- Spatail join by Census Tract\n', '- merges topologies\n', '- map topologies\n', '- map Businesses\n', '- outputs a .csv of the results\n', '- You can refer to https://github.com/mv1742/updny_2']",English,True
+10,"['# Typologies\n', ""- import raw Typology file with Census data 'NY_final_data_for_typologies_1.19.19.csv'\n"", '- merges Typologies with the new Binary typologies\n', '- map topologies']",English,True
+19,['# LOAD FOURSQUARE DATA'],Italian,True
+31,['# LOAD TWITTER DATA'],Western Frisian,False
+33,['# LOAD CENSUS DATA'],Latin,False
+44,['# Combine Datasets'],Dutch,True
+47,"['# Combine TW+FQ+Census\n', '- twitterdata \n', '- X_foursquare\n', '- Census_combined']",Latin,True
+51,['## ADD GEOMETRY & TYPOLOGIES'],Polish,False
+59,['# Part II. Modeling'],Western Frisian,True
+69,['# LR'],Russian,True
+72,['# DT'],Serbian,True
+76,['# Random Forest'],Norwegian,False
+79,['#### Note that the features have changed considerably with the updated binary typology-- users and checkins were the most important features initially.'],English,True
+80,['# SVM'],Kazakh,False
+83,['# Summary of Results'],English,True
+97,['- You can refer to https://github.com/mv1742/updny_2'],English,True

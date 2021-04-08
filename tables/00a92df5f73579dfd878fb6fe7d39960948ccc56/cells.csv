@@ -1,0 +1,6 @@
+cell_id,cell_type,source
+0,code,"['graph =[[0 for x in range(202)] for y in range(202)]\n', ""with open('dijkstraData.txt') as f:\n"", '    for x in f:\n', '        entry = [y for y in x.split()]\n', '        v1 = int(entry[0])\n', '        for t in entry[1:]:\n', '            v2,w = [int(u) for u in t.split("","")]\n', '            graph[v1][v2] = w\n', 'print(graph)']"
+1,code,"['dist = [1000000]*202\n', 'dist[1] = 0\n', 'shortset = [False]*202\n', 'def mindist():\n', '    m = 10000000\n', '    for v in range(1,202):\n', '        print(v)\n', '        if dist[v] < m and shortset[v] == False:\n', '            m = dist[v]\n', '            index = v\n', '    return index\n', '\n', 'for x in range(1,202):\n', '    #print(x)\n', '    u = mindist()\n', '    shortset[u] = True\n', '    for v in range(1,202):\n', '        if graph[u][v] > 0 and shortset[v] == False and dist[v] > dist[u]+graph[u][v]:\n', '            dist[v] = dist[u] + graph[u][v]']"
+2,code,"['print(dist)\n', 'print(len(dist))']"
+3,code,"['for i in [7,37,59,82,99,115,133,165,188,197]:\n', '    print(i,"" "" ,dist[i] )']"
+4,code,"['2599,2610,2947,2052,2367,2399,2029,2442,2505,3068']"

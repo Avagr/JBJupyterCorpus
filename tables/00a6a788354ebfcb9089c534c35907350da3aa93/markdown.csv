@@ -1,0 +1,7 @@
+cell_id,source,language,is_reliable
+0,"['# Clustering assignment\n', '\n', '### K-Means Cluster modelling']",English,True
+1,['### Use K-Means cluster analysis to cluster different iris species. '],English,True
+4,['### Data evaluation'],Japanese,False
+12,['### The heatmap is for looking at the features that are relevant to get the outcome. We can see that SepalWidthCm seems to be less relevant as compared to the other features.'],English,True
+16,['### Make an elbow plot and/or use silhouette analysis to find the optimal number of clusters.'],English,True
+17,['#### Silhouette score - a value near +1 indicates that the sample is far away from the neighboring clusters. A value of 0 indicates that the sample is on or very close to the decision boundary between two neighboring clusters and negative values indicate that those samples might have been assigned to the wrong cluster.\n'],English,True

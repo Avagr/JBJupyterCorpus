@@ -1,0 +1,21 @@
+cell_id,cell_type,source
+0,markdown,"['# Clustering assignment\n', '\n', '### K-Means Cluster modelling']"
+1,markdown,['### Use K-Means cluster analysis to cluster different iris species. ']
+2,code,"['#Modules used\n', 'import pandas as pd\n', 'import numpy as np\n', 'import matplotlib.pyplot as plt\n', '%matplotlib inline\n', 'import seaborn as sns\n', 'import sklearn\n', 'from sklearn.cluster import KMeans\n', 'from IPython.display import display']"
+3,code,"['#Reading the csv using pandas\n', ""flowers = pd.read_csv('Iris.csv')\n"", 'flowers.head()']"
+4,markdown,['### Data evaluation']
+5,code,['flowers.info()']
+6,code,"[""flowers = flowers.drop(['Id'], axis=1)""]"
+7,code,['flowers.head()']
+8,code,['flowers.shape']
+9,code,"[""flowers.Species.replace({'Iris-setosa':0,'Iris-versicolor':1, 'Iris-virginica':2},inplace=True)""]"
+10,code,"['#Checking for any null values\n', 'flowers.isnull().sum()']"
+11,code,"['plt.figure(figsize=(15,10))\n', ""p=sns.heatmap(flowers.corr(), annot=True,cmap='RdYlGn') ""]"
+12,markdown,['### The heatmap is for looking at the features that are relevant to get the outcome. We can see that SepalWidthCm seems to be less relevant as compared to the other features.']
+13,code,"['#independent and dependent variables\n', 'X = flowers.iloc[:,0:4]\n', 'y = flowers.iloc[:,-1]']"
+14,code,"['# Set the size of the plot\n', 'plt.figure(figsize=(14,7))\n', '\n', ""X.columns = ['Sepal_Length','Sepal_Width','Petal_Length','Petal_Width']\n"", ""y.columns = ['Species']\n"", '\n', '# Create a colormap\n', ""colormap = np.array(['red', 'green', 'blue'])\n"", ' \n', '# Plot Sepal\n', 'plt.subplot(1, 2, 1)\n', 'plt.scatter(X.Sepal_Length, X.Sepal_Width, c=colormap[y], s=40)\n', ""plt.title('Sepal')\n"", '\n', '#Plot Petal\n', 'plt.subplot(1, 2, 2)\n', 'plt.scatter(X.Petal_Length, X.Petal_Width, c=colormap[y], s=40)\n', ""plt.title('Petal')""]"
+15,code,"['nclusters = 3 # this is the k in kmeans\n', 'seed = 0\n', '\n', 'km = KMeans(n_clusters=nclusters, random_state=seed)\n', 'km.fit(X)\n', '\n', '# predict the cluster for each data point\n', 'y_cluster_kmeans = km.predict(X)\n', 'y_cluster_kmeans']"
+16,markdown,['### Make an elbow plot and/or use silhouette analysis to find the optimal number of clusters.']
+17,markdown,['#### Silhouette score - a value near +1 indicates that the sample is far away from the neighboring clusters. A value of 0 indicates that the sample is on or very close to the decision boundary between two neighboring clusters and negative values indicate that those samples might have been assigned to the wrong cluster.\n']
+18,code,"['#The elbow method finds the optimal value for k (#clusters).\n', 'from sklearn import metrics\n', 'score = metrics.silhouette_score(X, y_cluster_kmeans)\n', 'score']"
+19,code,[]
